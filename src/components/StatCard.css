@@ -1,0 +1,58 @@
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--tone-color, var(--primary));
+}
+
+.stat-card.tone-primary { --tone-color: var(--primary); }
+.stat-card.tone-slate { --tone-color: var(--slate); }
+.stat-card.tone-blue { --tone-color: var(--blue); }
+.stat-card.tone-violet { --tone-color: var(--violet); }
+.stat-card.tone-gold { --tone-color: var(--gold); }
+.stat-card.tone-red { --tone-color: var(--red); }
+
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-card-label {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+
+.stat-card-icon {
+  color: var(--tone-color, var(--primary));
+  display: flex;
+}
+
+.stat-card-value {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.stat-card-hint {
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+}

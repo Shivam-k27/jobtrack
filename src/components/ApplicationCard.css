@@ -1,0 +1,86 @@
+.app-card {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.app-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.app-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.app-card-company {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+
+.app-card-company:hover {
+  color: var(--primary);
+}
+
+.app-card-role {
+  color: var(--ink-muted);
+  font-size: 0.84rem;
+  margin-top: 2px;
+}
+
+.app-card-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.app-card-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.app-card-dates {
+  display: flex;
+  gap: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.app-card-dates > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-card-date-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+}
+
+.app-card-overdue {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.app-card-footer {
+  display: flex;
+  gap: 6px;
+  padding-top: 4px;
+}
+
+.app-card-delete:hover {
+  color: var(--red);
+  background: var(--red-soft);
+}
