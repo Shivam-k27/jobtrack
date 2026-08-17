@@ -125,4 +125,4 @@ src/
 
 ---
 
-Built with React + Vite for a placement-season portfolio project.
+Built with React + Vite.
