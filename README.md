@@ -34,16 +34,23 @@ The interface is built around a signature visual motif — the **pipeline rail**
 * **lucide-react** — icon set
 * **localStorage** — persistence layer (no backend, no database)
 * Plain CSS with a shared design-token system (no CSS framework)
-
 ## Screenshots
 
+### Dashboard
 
-```text
-docs/screenshots/dashboard.png
-docs/screenshots/applications.png
-docs/screenshots/details.png
-docs/screenshots/calendar.png
-```
+![JobTrack Dashboard](docs/screenshots/dashboard.png)
+
+### Applications
+
+![JobTrack Applications](docs/screenshots/applications.png)
+
+### Application Details
+
+![JobTrack Application Details](docs/screenshots/details.png)
+
+### Calendar
+
+![JobTrack Calendar](docs/screenshots/calendar.png)
 
 ## Installation
 
