@@ -37,7 +37,6 @@ The interface is built around a signature visual motif — the **pipeline rail**
 
 ## Screenshots
 
-*Add screenshots of the Dashboard, Applications list, Application Details, and Calendar pages here before sharing this project.*
 
 ```text
 docs/screenshots/dashboard.png
