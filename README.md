@@ -38,19 +38,23 @@ The interface is built around a signature visual motif — the **pipeline rail**
 
 ### Dashboard
 
-![JobTrack Dashboard](docs/screenshots/dashboard.png)
+<img width="1919" height="1079" alt="dashboard" src="https://github.com/user-attachments/assets/29c80e63-90c5-401e-92c3-fca85ef55969" />
+
 
 ### Applications
 
-![JobTrack Applications](docs/screenshots/applications.png)
+<img width="1919" height="1078" alt="applications" src="https://github.com/user-attachments/assets/00539b51-42c7-43b9-96b5-d258afd1d59c" />
+
 
 ### Application Details
 
-![JobTrack Application Details](docs/screenshots/details.png)
+<img width="1919" height="1079" alt="details" src="https://github.com/user-attachments/assets/d958a61f-6924-410e-9aac-bb8905656b52" />
+
 
 ### Calendar
 
-![JobTrack Calendar](docs/screenshots/calendar.png)
+<img width="1919" height="1079" alt="calendar" src="https://github.com/user-attachments/assets/7825ef22-fc06-441f-b8ec-181acacb2370" />
+
 
 ## Installation
 
