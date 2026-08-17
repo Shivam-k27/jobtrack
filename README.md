@@ -2,7 +2,9 @@
 
 A modern, SaaS-style dashboard for tracking job applications, online assessments, interviews, and offers during placement season. Built as a fully client-side React application — no backend, no database, all data lives in the browser via `localStorage`.
 
-> **Note:** All company names and application data shipped with this project are fictional sample data used to demonstrate the UI. They do not represent real applications.
+> **Live Demo:** https://jobtrack-taupe.vercel.app/
+
+> **Note:** All company names and application data shipped with this project are fictional sample data used to demonstrate the UI.
 
 ---
 
@@ -14,30 +16,30 @@ The interface is built around a signature visual motif — the **pipeline rail**
 
 ## Features
 
-- **Dashboard** — total/active application counts, a full status breakdown, an applications-over-time trend, a selected-vs-rejected outcome chart, upcoming interviews & deadlines, and a recent-activity feed.
-- **Applications list** — searchable, filterable (by status), and sortable (by deadline, applied date, company, or CTC), with both table and card layouts.
-- **Add Application** — validated form for company, role, CTC, location, dates, status, description, and notes.
-- **Application Details** — full record view with an editable form, a delete confirmation flow, and a vertical pipeline-rail timeline of progress.
-- **Calendar** — month view with interview and deadline markers, plus a day-detail panel.
-- **Dark / light mode**, persisted across visits.
-- **Full CRUD**, all persisted to `localStorage` — your data survives a refresh.
-- Empty states, loading skeleton, responsive layout (desktop sidebar, mobile drawer nav), and delete confirmations throughout.
+* **Dashboard** — total/active application counts, a full status breakdown, an applications-over-time trend, a selected-vs-rejected outcome chart, upcoming interviews & deadlines, and a recent-activity feed.
+* **Applications list** — searchable, filterable (by status), and sortable (by deadline, applied date, company, or CTC), with both table and card layouts.
+* **Add Application** — validated form for company, role, CTC, location, dates, status, description, and notes.
+* **Application Details** — full record view with an editable form, a delete confirmation flow, and a vertical pipeline-rail timeline of progress.
+* **Calendar** — month view with interview and deadline markers, plus a day-detail panel.
+* **Dark / light mode**, persisted across visits.
+* **Full CRUD**, all persisted to `localStorage` — your data survives a refresh.
+* Empty states, loading skeleton, responsive layout (desktop sidebar, mobile drawer nav), and delete confirmations throughout.
 
 ## Tech Stack
 
-- **React 19** (functional components, hooks: `useState`, `useEffect`, `useMemo`, custom hooks)
-- **Vite** — build tooling and dev server
-- **React Router v7** — client-side routing
-- **Recharts** — dashboard charts
-- **lucide-react** — icon set
-- **localStorage** — persistence layer (no backend, no database)
-- Plain CSS with a shared design-token system (no CSS framework)
+* **React 19** (functional components, hooks: `useState`, `useEffect`, `useMemo`, custom hooks)
+* **Vite** — build tooling and dev server
+* **React Router v7** — client-side routing
+* **Recharts** — dashboard charts
+* **lucide-react** — icon set
+* **localStorage** — persistence layer (no backend, no database)
+* Plain CSS with a shared design-token system (no CSS framework)
 
 ## Screenshots
 
-_Add screenshots of the Dashboard, Applications list, Application Details, and Calendar pages here before sharing this project._
+*Add screenshots of the Dashboard, Applications list, Application Details, and Calendar pages here before sharing this project.*
 
-```
+```text
 docs/screenshots/dashboard.png
 docs/screenshots/applications.png
 docs/screenshots/details.png
@@ -73,55 +75,55 @@ On first run, JobTrack seeds `localStorage` with 12 sample applications so the d
 
 ## Folder Structure
 
-```
+```text
 src/
-├── components/          # Reusable UI building blocks
-│   ├── charts/           # Recharts wrappers (bar, area, donut, tooltip)
+├── components/
+│   ├── charts/
 │   ├── ApplicationCard.jsx
 │   ├── ApplicationForm.jsx
 │   ├── ApplicationTable.jsx
 │   ├── ConfirmDialog.jsx
 │   ├── EmptyState.jsx
-│   ├── PipelineRail.jsx  # signature status-progress component
+│   ├── PipelineRail.jsx
 │   ├── SearchFilterBar.jsx
 │   ├── Sidebar.jsx
 │   ├── StatCard.jsx
 │   ├── StatusBadge.jsx
 │   ├── Topbar.jsx
 │   └── UpcomingList.jsx
-├── data/                 # Static data
-│   ├── constants.js       # statuses, colors, sort options
-│   └── sampleData.js      # fictional seed data
-├── hooks/                # Custom hooks
-│   ├── useApplications.js # CRUD + localStorage sync
-│   └── useTheme.js        # dark/light mode
+├── data/
+│   ├── constants.js
+│   └── sampleData.js
+├── hooks/
+│   ├── useApplications.js
+│   └── useTheme.js
 ├── layouts/
-│   └── MainLayout.jsx     # sidebar + topbar shell
-├── pages/                # Route-level pages
+│   └── MainLayout.jsx
+├── pages/
 │   ├── AddApplication.jsx
 │   ├── ApplicationDetails.jsx
 │   ├── Applications.jsx
 │   ├── Calendar.jsx
 │   ├── Dashboard.jsx
 │   └── NotFound.jsx
-├── utils/                # Pure helper functions
+├── utils/
 │   ├── dateUtils.js
 │   ├── statsUtils.js
 │   ├── storage.js
 │   └── validation.js
-├── App.jsx                # Routing + top-level state
+├── App.jsx
 ├── main.jsx
-└── index.css               # Design tokens, reset, shared utility classes
+└── index.css
 ```
 
 ## Future Improvements
 
-- Export/import applications as JSON or CSV for backup and sharing.
-- Attach resumes or offer letters per application (would require a backend or IndexedDB for file storage).
-- Reminders/notifications for upcoming deadlines.
-- Multi-device sync via an optional backend, without losing the offline-first localStorage mode.
-- Kanban-style board view of applications grouped by status.
-- Tagging/labels for referral source, application round, or interview panel.
+* Export/import applications as JSON or CSV for backup and sharing.
+* Attach resumes or offer letters per application (would require a backend or IndexedDB for file storage).
+* Reminders/notifications for upcoming deadlines.
+* Multi-device sync via an optional backend, without losing the offline-first localStorage mode.
+* Kanban-style board view of applications grouped by status.
+* Tagging/labels for referral source, application round, or interview panel.
 
 ---
 
